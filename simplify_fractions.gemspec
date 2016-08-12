@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "simplify_fractions"
   spec.version       = SimplifyFractions::VERSION
   spec.authors       = ["Fabian Bermel"]
-  spec.email         = ["fabian.bermel@gfk.com"]
+  spec.email         = ["fabian@bermel.org"]
 
   spec.summary       = %q{simplify fractions}
   spec.description   = %q{This gem allows you to simplify fractions}
