@@ -1,7 +1,7 @@
 require "simplify_fractions/version"
 
 module SimplifyFractions
-  class SimplifyFractions
+  class Fractions
     def find_gcd(numerator,denominator)
       until denominator.zero?
         numerator, denominator = denominator, numerator % denominator
