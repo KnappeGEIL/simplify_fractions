@@ -4,23 +4,27 @@ This is a gem to simplify fractions
 
 ## Installation
 
-Add this line to your application's Gemfile:
+First build the gem:
 
-```ruby
-gem 'simplify_fractions'
-```
+  $ gem build simplify_fractions.gemspec
 
-And then execute:
+Then install:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install simplify_fractions
+  $ gem install simplify_fractions-0.1.1.gem
 
 ## Usage
 
-No usage instructions yet
+The gem only features two methods.
+
+```ruby
+require 'simplify_fractions'
+
+simple = SimplifyFractions::SimplifyFractions.new
+
+puts simple.find_gcd(46410,119340).to_s # Find greatest common divisor
+
+puts simple.simplify_fraction(46410,119340).to_s # simplify a fraction
+```
 
 ## Contributing
 
