@@ -10,7 +10,7 @@ First build the gem:
 
 Then install:
 
-  $ gem install simplify_fractions-0.1.1.gem
+  $ gem install simplify_fractions-0.1.2.gem
 
 ## Usage
 
@@ -19,7 +19,7 @@ The gem only features two methods.
 ```ruby
 require 'simplify_fractions'
 
-simple = SimplifyFractions::SimplifyFractions.new
+simple = SimplifyFractions::Fractions.new
 
 puts simple.find_gcd(46410,119340).to_s # Find greatest common divisor
 
