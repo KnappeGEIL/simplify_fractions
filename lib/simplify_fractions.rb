@@ -3,10 +3,10 @@ require "simplify_fractions/version"
 module SimplifyFractions
   class SimplifyFractions
     def find_gcd(numerator,denominator)
-      gcd = numerator % denominator
-      unless gcd == 0
-        gcd = numerator % denominator
+      until denominator.zero?
+        numerator, denominator = denominator, numerator % denominator
       end
+      return numerator
     end
 
     def simplify_fraction(numerator,denominator)
